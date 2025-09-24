@@ -1,12 +1,7 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { Ingredient, Recipe, UserPreferences } from '../types';
-import Constants from 'expo-constants';
 
-const API_KEY = Constants.expoConfig?.extra?.EXPO_PUBLIC_GEMINI_API_KEY || process.env.EXPO_PUBLIC_GEMINI_API_KEY;
-
-if (!API_KEY) {
-  throw new Error('Gemini API key no encontrada. Asegúrate de configurar EXPO_PUBLIC_GEMINI_API_KEY en tu .env.local');
-}
+const API_KEY = 'YOUR_GEMINI_API_KEY_HERE';
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 
