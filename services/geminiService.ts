@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { Ingredient, Recipe, UserPreferences } from '../types';
 
-const API_KEY = 'YOUR_GEMINI_API_KEY_HERE';
+const API_KEY = 'AIzaSyCMxwvPNcDVS6lg7yUZ8LJvJ1iy_3kMhRo';
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 
